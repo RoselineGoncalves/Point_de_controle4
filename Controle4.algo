@@ -1,0 +1,35 @@
+ALGORITHM PHRASE (nom de lalgorithme)
+<--declaration des variables-->
+VAR
+    Phrase : string ;
+    Nbrmot, nbrvoy, longueur : integer ;
+
+BEGIN (debut de programme)
+ <--initialisation des variables Nbrmot, nbrvoy, longueur-->
+
+    Nbrmot <- 0;
+    Nbrvoy <- 0;
+    longueur <- 0;
+  <--on demande à lutilisation decrire une phrase-->
+
+ Ecrire ‘‘entrez une phrase se terminant par un point.’’
+ Lire phrase;
+
+FOR i FROM phrase DO
+    Longueur : longueur + 1;
+END_FOR
+
+IF i <- " " THEN
+Nbrmot <- nbrmot + 1;
+
+IF c <- "a" ou "e" ou "i" ou "o" ou "u" ou "y" THEN
+Nbrvoy <- nbrvoy + 1;
+END_IF
+END_IF
+
+END
+
+
+
+
+
